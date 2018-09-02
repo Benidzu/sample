@@ -11,7 +11,14 @@
 	transition: .5s;
 }
 
-.item {
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+/*.item {
   width: 200px;
   height: 200px;
   margin: 50px auto;
@@ -21,7 +28,7 @@
   color: #FFF;
   font-size: 3em;
   z-index: 100;
-}
+}*/
 
 .navbar-toggle, #navbar-collapse-main {
 	background: inherit;
@@ -29,7 +36,7 @@
 }
 
 .navbar-brand {
-	min-height : 55px;
+	min-height : 45px;
 	padding: 0 15px 5px;
 }
 
@@ -45,6 +52,24 @@
 	color: black;
 }
 
+#slides {
+	max-height: 70%;
+	overflow: hidden;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: auto;
+}
+
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
 #home {
 	background: url(img/mountains.jpeg) no-repeat fixed;
 	background-position: 50% 100%;
@@ -54,6 +79,7 @@
 	width: 100%;
 	background-size: cover;
 }
+
 
 
 .landing-text {
@@ -66,6 +92,7 @@
 .landing-text h1{
 	font-size: 500%;
 	font-weight: 700;
+	font-family: 'Pacifico', cursive;
 }
 
 .padding {
@@ -77,7 +104,8 @@
 }
 
 #mid {
-	margin-top: 150px;
+	margin-top: 50px;
+	border-radius: 50%;
 }
 
 .black {
@@ -115,6 +143,14 @@ footer {
 	color: #FFF;
 }
 
+
+#stev {
+	font-size: 48px;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	font-weight: 700;
+}
+
 .fa:hover {
 	color: #D5D5D5;
 	text-decoration: none;
@@ -133,7 +169,12 @@ footer {
 		padding: 10px;
 	}
 	#mid {
-	margin-top: 0px;
+		margin: 0 auto;
+		max-width: 200px
+	}
+	#hop{
+		margin: 0 auto;
+		text-align: center;
 	}
 	.icon {
 		padding-top: 5%;
