@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Landing Page Website Tutorial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="parallax.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+    $(window).on('scroll', function() {
+      if($(window).scrollTop() > 400){
+        $('.navbar').addClass('black');
+        $('#actual').addClass('blacktwo');
+      }
+      else{
+        $('.navbar').removeClass('black');
+        $('#actual').removeClass('blacktwo');
+      }
+    })
+  </script>
+
+  <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/w3newbie.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+       <ul class="nav navbar-nav navbar-right" id="actual">
+        <li><a  href="#">Home</a></li>
+        <li><a  href="#">About</a></li>
+        <li><a  href="#">Services</a></li>
+        <li><a  href="#">Testimonials</a></li>
+        <li><a  href="#">Contact</a></li>
+       </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="home" data-parallax="scroll" data-image-src="img/mountains.jpeg" data-position="center bottom" data-speed="0.5">
+  <div class="landing-text">
+    <h1>BOOTSTRAP</h1>
+    <h3>Learn the basic building blocks.</h3>
+    <a href="#" class="btn btn-default btn-lg">Get Started</a>
+  </div>
+</div>  
+
+<div class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6" >
+        <img src="img/bootstrap.png" id="mid" data-aos="fade-right">
+      </div>
+      <div class="col-sm-6 text-center" data-aos="fade-left">
+        <h2>All About using bootstrap.</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet ligula nibh. Praesent et ultrices nibh. Aliquam pellentesque, sem et tempor venenatis, ipsum felis vestibulum risus, nec sollicitudin ipsum mi sed justo. Maecenas dignissim odio condimentum mi fringilla porttitor</p>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet ligula nibh. Praesent et ultrices nibh. Aliquam pellentesque, sem et tempor venenatis, ipsum felis vestibulum risus, nec sollicitudin ipsum mi sed justo. Maecenas dignissim odio condimentum mi fringilla porttitor</p>    
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+      <h4>Built with Sass</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet ligula nibh. Praesent et ultrices nibh. Aliquam pellentesque, sem et tempor venenatis, ipsum felis vestibulum risus, nec sollicitudin ipsum mi sed justo.</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="flip-right">
+      <img src="img/sass.png" class="img-responsive" >
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+      <h4>And Less</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet ligula nibh. Praesent et ultrices nibh. Aliquam pellentesque, sem et tempor venenatis, ipsum felis vestibulum risus, nec sollicitudin ipsum mi sed justo.</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="flip-left">
+      <img src="img/less.png" class="img-responsive">
+    </div>        
+  </div>
+</div>
+</div>
+
+<div id="fixed" data-parallax="scroll" data-image-src="img/paris.jpg" data-position="center bottom" data-speed="0.5">
+
+</div>
+
+
+<div class="padding">
+<div class="container">
+  <div class="row">
+        <div class="col-sm-6 " data-aos="zoom-in-up">
+          <h4>Here's the cool thing about Bootstrap...</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet ligula nibh. Praesent et ultrices nibh. Aliquam pellentesque, sem et tempor venenatis, ipsum felis vestibulum risus, nec sollicitudin ipsum mi sed justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet ligula nibh. Praesent et ultrices nibh. Aliquam pellentesque, sem et tempor venenatis, ipsum felis vestibulum risus, nec sollicitudin ipsum mi sed justo</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet ligula nibh. Praesent et ultrices nibh. Aliquam pellentesque, sem et tempor venenatis, ipsum felis vestibulum risus, nec sollicitudin ipsum mi sed justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet ligula nibh. Praesent et ultrices nibh. Aliquam pellentesque, sem et tempor venenatis, ipsum felis vestibulum risus, nec sollicitudin ipsum mi sed justo</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="img/bootstrap2.png" class="img-responsive">
+        </div>
+  </div>
+</div>
+</div>
+
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Contact us</h3>
+      <br>
+      <h4> Our conctact info here.</h4>
+    </div>
+    <div class="col-sm-4">
+      <h3>Connect</h3>
+      <br>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-github"></a>
+    </div>
+    <div class="col-sm-4">
+      <img src="img/b.png" class="icon">
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
